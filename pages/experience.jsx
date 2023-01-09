@@ -83,7 +83,7 @@ const Experience = () => {
                 alignItems: "center",
               }}
             >
-              MIT College Aurangabad
+              MIT Aurangabad
             </p>
             <p
               style={{
