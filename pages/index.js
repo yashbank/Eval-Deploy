@@ -39,7 +39,7 @@ export default function Home({ user, repo }) {
       <div>
         {/* main div */}
         <div style={{
-          border: "1px solid white",
+          // border: "1px solid white",
           width: "100%",
           height: "900px",
           display: "flex",
@@ -47,22 +47,31 @@ export default function Home({ user, repo }) {
         }}>
           {/* inner left div  */}
           <div style={{
-            border: "1px solid pink",
+            // border: "1px solid pink",
             width: "25%",
             height: "100%",
-            padding: "5px"
+            padding: "5px",
+            gap: "25px",
+            display: "flex",
+            flexDirection: "column"
+
           }}>
             {/* inner left div 1 */}
             <div style={{
-              border: "1px solid red",
-              width: "100%",
+              border: "3px solid lightgrey",
+              width: "95%",
               height: "40%",
               padding: "5px",
               justifyContent: "center",
               textAlign: "center",
               display: "flex",
               flexDirection: "column",
-              alignItems: "center"
+              alignItems: "center",
+              borderTopLeftRadius: "20px",
+              borderBottomRightRadius: "20px",
+              margin: "2%",
+              fontSize: "22px",
+              lineHeight: "35px"
             }} >
               <div>
                 <img src={user.avatar_url} alt='img' style={{ width: "40%" }} />
@@ -72,33 +81,190 @@ export default function Home({ user, repo }) {
               </div>
               <div>@{user.login}</div>
               <div>{user.bio}</div>
-              <div>
+              <div style={{
+                display: "flex",
+                width: "100%",
+                justifyContent: "space-evenly"
+              }}>
                 <Link href="https://drive.google.com/file/d/1Kc6mMWHNep-eJan4ZsOcARtHedCzEWvx/view?usp=share_link">
-                  <button >Resume</button>
+                  <button style={{
+                    padding: "10%",
+                    margin: "1%",
+                  }} >Resume</button>
                 </Link>
-                <button onClick={getgh}>Follow</button>
+                <Link href="https://github.com/yashbank">
+
+                  <button style={{
+                    padding: "10%",
+                    margin: "1%",
+                  }} onClick={getgh}>Follow</button>
+                </Link>
               </div>
 
             </div>
             {/* inner left div 2 */}
             <div style={{
-              border: "1px solid blue",
-              width: "100%",
-              height: "20%",
-              padding: "5px",
+              border: "3px solid lightgrey",
+              width: "95%",
+              height: "30%",
+              padding: "8%",
               display: "grid",
-              gridTemplateColumns: "1fr 1fr 1fr"
+              gridTemplateColumns: "1fr 1fr 1fr",
+              borderTopLeftRadius: "20px",
+              borderBottomRightRadius: "20px",
+              margin: "1%",
+              gap: "5px"
             }} >
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JAVASCRIPT</p>
-              <p>REACT.JS</p>
-              <p>NODE.JS</p>
-              <p>MONGODB</p>
-              <p>TYPESCRIPT</p>
-              <p>GIT</p>
-              <p>CHAKRA-UI</p>
-              <p>TAILWIND</p>
+              <p style={{
+
+                border: "1px solid grey",
+                margin: "1%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "5%",
+                borderTopLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                margin: "1%",
+                fontSize: "11px",
+                fontWeight: "bold"
+              }}>HTML</p>
+              <p style={{
+
+                border: "1px solid grey",
+                margin: "1%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "5%",
+                borderTopLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                margin: "1%",
+                fontSize: "11px",
+                fontWeight: "bold"
+              }}>CSS</p>
+              <p style={{
+
+                border: "1px solid grey",
+                margin: "1%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "5%",
+                borderTopLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                margin: "1%",
+                fontSize: "11px",
+                fontWeight: "bold"
+              }}>JAVASCRIPT</p>
+              <p style={{
+
+                border: "1px solid grey",
+                margin: "1%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "5%",
+                borderTopLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                margin: "1%",
+                fontSize: "11px",
+                fontWeight: "bold"
+              }}>REACT.JS</p>
+              <p style={{
+
+                border: "1px solid grey",
+                margin: "1%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "5%",
+                borderTopLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                margin: "1%",
+                fontSize: "11px",
+                fontWeight: "bold"
+              }}>NODE.JS</p>
+              <p style={{
+
+                border: "1px solid grey",
+                margin: "1%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "5%",
+                borderTopLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                margin: "1%",
+                fontSize: "11px",
+                fontWeight: "bold"
+              }}>MONGODB</p>
+              <p style={{
+
+                border: "1px solid grey",
+                margin: "1%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "5%",
+                borderTopLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                margin: "1%",
+                fontSize: "11px",
+                fontWeight: "bold"
+              }}>TYPESCRIPT</p>
+              <p style={{
+
+                border: "1px solid grey",
+                margin: "1%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "5%",
+                borderTopLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                margin: "1%",
+                fontSize: "11px",
+                fontWeight: "bold"
+              }}>GIT</p>
+              <p style={{
+
+                border: "1px solid grey",
+                margin: "1%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "5%",
+                borderTopLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                margin: "1%",
+                fontSize: "11px",
+                fontWeight: "bold"
+              }}>CHAKRA-UI</p>
+              <p style={{
+
+                border: "1px solid grey",
+                margin: "1%",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                alignItems: "center",
+                padding: "5%",
+                borderTopLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                margin: "1%",
+                fontSize: "11px",
+                fontWeight: "bold"
+              }}>TAILWIND</p>
 
 
 
@@ -110,56 +276,60 @@ export default function Home({ user, repo }) {
             </div>
             {/* inner left div 3 */}
             <div style={{
-              border: "1px solid yellow",
-              width: "100%",
-              height: "40%",
-              padding: "10px",
+              border: "3px solid lightgrey",
+              width: "97%",
+              height: "28%",
+              padding: "3%",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              gap: "35px",
+              gap: "15px",
+              borderTopLeftRadius: "20px",
+              borderBottomRightRadius: "20px",
+              marginTop: "2%",
+              fontSize: "16px"
+
 
             }} >
               <h1 style={{ fontSize: "22px" }}>Education and Experience</h1>
-              <div style={{ display: "flex", fontSize: "22px", gap: "15px" }}>
+              <div style={{ display: "flex", fontSize: "16px", gap: "15px", justifyContent: "space-evenly" }}>
                 <p style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>1</p>
                 <div style={{
                   display: "flex",
                   flexDirection: "column",
-                  fontSize: "20px"
-                  ,
-                  justifyContent: "center",
-                  alignItems: "center"
+                  fontSize: "16px",
+                  justifyContent: "start",
+                  alignItems: "start"
                 }}>
-                  <p style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>Student At Masai School</p>
-                  <p style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>July-2022 - Present</p></div>
+                  <p style={{ display: "flex", justifyContent: "start", alignItems: "start" }}>Student At Masai School</p>
+                  <p style={{ display: "flex", justifyContent: "start", alignItems: "start" }}>July-2022 - Present</p></div>
               </div>
-              <div style={{ display: "flex", fontSize: "22px", gap: "15px" }}>
-                <p style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>2</p>
+              <div style={{ display: "flex", fontSize: "16px", gap: "15px" }}>
+                <p style={{ display: "flex", justifyContent: "start", alignItems: "start" }}>2</p>
                 <div style={{
                   display: "flex",
                   flexDirection: "column",
-                  fontSize: "20px"
+                  fontSize: "16px"
                   ,
-                  justifyContent: "center",
-                  alignItems: "center"
+                  justifyContent: "start",
+                  alignItems: "start"
                 }}>
-                  <p style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>MIT College Aurangabad</p>
-                  <p style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>Aug-2020 - Present</p></div>
+                  <p style={{ display: "flex", justifyContent: "start", alignItems: "start" }}>MIT College Aurangabad</p>
+                  <p style={{ display: "flex", justifyContent: "start", alignItems: "start" }}>Aug-2020 - Present</p></div>
               </div>
-              <div style={{ display: "flex", fontSize: "22px", gap: "15px" }}>
-                <p style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>3</p>
+              <div style={{ display: "flex", fontSize: "16px", gap: "15px" }}>
+                <p style={{ display: "flex", justifyContent: "start", alignItems: "start" }}>3</p>
                 <div style={{
                   display: "flex",
                   flexDirection: "column",
-                  fontSize: "20px",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  fontSize: "16px",
+                  justifyContent: "start",
+                  alignItems: "start",
                   // border: "1px solid grey"
                 }}>
-                  <p style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>Senior Digital Marketing Expert</p>
-                  <p style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>Jan-2020 - Nov 2020</p></div>
+                  <p style={{ display: "flex", justifyContent: "start", alignItems: "start" }}>Senior Digital Marketing Expert</p>
+                  <p style={{ display: "flex", justifyContent: "start", alignItems: "start" }}>Jan-2020 - Nov 2020</p></div>
               </div>
 
             </div>
@@ -167,18 +337,24 @@ export default function Home({ user, repo }) {
 
           {/* inner right div */}
           <div style={{
-            border: "1px solid violet",
+            // border: "1px solid ",
             width: "75%",
             height: "100%",
             margin: "5px"
           }}>
-            <h1>Projects</h1>
+            <h1 style={{
+              textAlign: "center"
+            }}>Projects</h1>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px", padding: "2%" }}>
               {
                 repo.items.map((el) => {
                   return (
                     <Link key={el.id} href={el.html_url}>
-                      <div style={{ border: "1px solid grey", width: "100%", padding: "2%" }} >
+                      <div style={{
+                        border: "2px solid grey", width: "100%", padding: "5%", borderTopLeftRadius: "20px",
+                        borderBottomRightRadius: "20px",
+                        margin: "1%",
+                      }} >
 
                         <h1 style={{
                           margin: "1%"
@@ -188,18 +364,25 @@ export default function Home({ user, repo }) {
                           display: "flex",
                           justifyContent: "space-between",
                           marginTop: "2%",
-                          marginBottom: "2%"
+                          marginBottom: "2%",
+                          alignItems: "center"
                         }}>
                           <div style={{
                             display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "60%"
 
                           }}>
-                            <p><img style={{
+                            <h2><img style={{
                               width: "10%"
-                            }} src='https://www.freepnglogos.com/uploads/star-png/star-vector-png-transparent-image-pngpix-21.png' alt='star' />{el.stargazers_count}</p>
-                            <p><img style={{
-                              width: "50%"
-                            }} src='https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png' />{el.forks_count}</p>
+                            }} src='https://www.freepnglogos.com/uploads/star-png/star-vector-png-transparent-image-pngpix-21.png' alt='star' />  {el.stargazers_count}</h2>
+                            <h2 style={{
+                              display: "flex",
+                              justifyContent: "space-between"
+                            }}><img style={{
+                              width: "130%"
+                            }} src='https://cdn.iconscout.com/icon/premium/png-128-thumb/forked-4699913-3897730.png' />  {el.forks_count}</h2>
 
                           </div>
                           <div>

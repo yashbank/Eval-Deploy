@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ theme }) => {
   const router = useRouter();
   const gotohome = () => {
     router.push("/");
@@ -17,14 +17,23 @@ const Navbar = () => {
       style={{
         display: "flex",
         justifyContent: "space-between",
-        width: "100%",
+        width: "99%",
+        alignItems: "center",
+        padding: "1%",
+        border: "3px solid ",
+        marginTop: "0",
+        // backgroundColor: "lightgrey",
+        // color: "black",
+        borderTopLeftRadius: "20px",
+        borderBottomRightRadius: "20px",
+        margin: "1%",
       }}
     >
       <div
         style={{
           display: "flex",
-          justifyContent: "space-evenly",
-          width: "40%",
+          justifyContent: "space-around",
+          width: "60%",
         }}
       >
         <h1
@@ -57,18 +66,22 @@ const Navbar = () => {
           display: "flex",
           justifyContent: "space-evenly",
           width: "25%",
+          alignItems: "center",
         }}
       >
         <img
           style={{
             width: "20%",
+            cursor: "pointer",
           }}
-          src="https://banner2.cleanpng.com/20180405/ale/kisspng-computer-icons-icon-design-sun-png-5ac5ae00d2d651.7317821815229045768636.jpg"
+          onClick={theme}
+          src="https://www.freeiconspng.com/thumbs/sun-icon/sun-icon-31.png"
           alt="imgsun"
         />
         <img
           style={{
             width: "20%",
+            cursor: "pointer",
           }}
           src="https://avatars.githubusercontent.com/u/110368244?v=4"
           alt="avatar"
