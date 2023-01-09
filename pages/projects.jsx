@@ -17,6 +17,7 @@ const Projects = ({ repo }) => {
           gridTemplateColumns: "1fr 1fr",
           gap: "15px",
           padding: "2%",
+          marginTop: "0",
         }}
       >
         {repo.items.map((el) => {
