@@ -221,7 +221,7 @@ export default function Home({ user, repo }) {
 }
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let res = await fetch(`https://api.github.com/users/yashbank`)
   let data = await res.json()
   console.log('data:', data)
